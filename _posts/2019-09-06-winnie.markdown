@@ -1,0 +1,59 @@
+---
+layout: post
+title:  Winnie
+categories: [project, interest, game_mod]
+---
+A character mod for [__Don't Starve Together__](https://dontstarve.fandom.com/wiki/Don%27t_Starve_Together), adding a self-made character to play as in game.
+
+<div style="text-align: center; margin-top: -60px">
+	<img src="/assets/images/winnie_none.png" alt="Winnie Portrait" width="250"/>
+	<img src="/assets/images/winnie_name.png" alt="Winnie Name" width="250"/>
+</div>
+
+
+### Mod Icon
+![Winnie Icon](/assets/images/winnie_icon.png)
+<br><br>
+
+
+### Descriptions
+Winnie, a pretty, but hysterical girl.
+
+Hunger: 100
+Sanity: 120
+Health: 150
+
+__Has a small stomach__<br>
+-- 100 max hunger<br>
+-- slower digestion (0.8 hunger rate)
+
+__Fatal attraction__<br>
+-- players near by can restore sanity<br>
+-- attracts bees and butterflies
+
+__Gets hysterical easily__<br>
+-- causes more damage when sanity is low (1.5 damage, when sanity <= 60)<br>
+-- walks faster (1.5 move speed)<br>
+-- gets insane easier (dark creatures appear when sanity <= 30)
+
+Because of the speed & damage buff and lower hunger rate, she is good at exploring map. Also, as she causes more damage when her sanity < 60 and dark animals attack her earlier than others, she produces nightmare fuel quickly.
+<br><br>
+
+
+### Images and Animations
+![character](/assets/images/winnie_animation.JPG)<br>
+This is the overall appearence of this character. All the parts are drawn by myself (as you may notice, I am not a professional artist :P). Here is the separate parts:
+![body parts](/assets/images/winnie_components0.png)
+![body parts](/assets/images/winnie_components1.png)
+
+When she becomes a cute ghost:
+![ghost](/assets/images/winnie_ghost.png)
+
+Hope you like my arts!
+<br><br>
+
+
+### Links
+Check code and images in [Github](https://github.com/liumuzi/winnie)!
+
+Subscribe or leave comments to this mod in [Steam Community](https://steamcommunity.com/sharedfiles/filedetails/?id=1191880615)!

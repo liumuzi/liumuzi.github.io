@@ -1,0 +1,21 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+Here is the small projects I have participated in, including what I did out of my own interets and the projects required by courses in the university.
+
+{% for post in site.posts %}
+	{% if post.categories contains 'project' %}
+		<div>
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			{% for tag in site.categories %}
+				{% if tag.name != 'project' and post.categories contains tag.name %}
+					<a class="tag" href= "{{ tag.url }}" >{{tag.name}}</a> 
+				{% endif %}
+			{% endfor %}
+			<p>{{ post.excerpt }}</p>
+		</div>
+	{% endif %}
+{% endfor %}
