@@ -4,7 +4,7 @@ phone: (+852) 66158240
 resume_path: /assets/Resume.pdf
 photo_path: /assets/images/photo.jpg
 description: >- # this means to ignore newlines until "baseurl:"
-  An enthusiastic student who enjoys learning, thinking and exploring.
+  An enthusiastic person who enjoys learning, thinking and exploring.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github:
