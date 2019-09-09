@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  Speed Boost Package
-categories: [project, interest, game_mod]
+categories: [project, interest, game_mod, Lua]
 ---
-A mod for [__Don't Starve Together__](https://dontstarve.fandom.com/wiki/Don%27t_Starve_Together) for accelarating player's character.
+A mod for [___Don't Starve Together___](https://dontstarve.fandom.com/wiki/Don%27t_Starve_Together) for accelarating player's character.
 
 
 ### Mod Icon

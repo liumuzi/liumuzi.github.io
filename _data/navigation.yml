@@ -1,8 +1,10 @@
 - name: Home
   link: /
-- name: About
-  link: /about/
+- name: Research
+  link: /research/
 - name: Projects
   link: /projects/
 - name: Blogs
   link: /blogs/
+- name: Resume
+  link: /resume/

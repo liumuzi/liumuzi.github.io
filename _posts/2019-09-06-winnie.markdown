@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  Winnie
-categories: [project, interest, game_mod]
+categories: [project, interest, game_mod, Lua]
 ---
-A character mod for [__Don't Starve Together__](https://dontstarve.fandom.com/wiki/Don%27t_Starve_Together), adding a self-made character to play as in game.
+A character mod for [___Don't Starve Together___](https://dontstarve.fandom.com/wiki/Don%27t_Starve_Together), adding a self-made character to play as in game.
 
 <div style="text-align: center; margin-top: -60px">
 	<img src="/assets/images/winnie_none.png" alt="Winnie Portrait" width="250"/>

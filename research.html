@@ -1,0 +1,21 @@
+---
+layout: default
+title: Research
+permalink: /research/
+---
+
+The research projects I have participated in, related research plans and reports are also included.
+
+{% for post in site.posts %}
+	{% if post.categories contains 'research' %}
+		<div>
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			{% for tag in site.categories %}
+				{% if tag.name != 'research' and post.categories contains tag.name %}
+					<a class="tag" href= "{{ tag.url }}" >{{tag.name}}</a> 
+				{% endif %}
+			{% endfor %}
+			<p>{{ post.excerpt }}</p>
+		</div>
+	{% endif %}
+{% endfor %}

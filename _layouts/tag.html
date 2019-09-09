@@ -3,7 +3,7 @@ layout: default
 ---
   <h1> <small>Posts |</small> {{ page.name }}</h1>
 
-  <p>{{ content }}</p>
+  <div class="excerpt">{{ content }}</div>
 
   {% for post in site.posts %}
     {% if post.categories contains page.name %}
