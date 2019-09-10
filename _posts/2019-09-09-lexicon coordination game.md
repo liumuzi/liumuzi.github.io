@@ -2,7 +2,7 @@
 title: Reinforcement Learning for Convention Emergence in Lexicon Coordination Game
 categories: [research, interest, multi-agent system, reinforcement learning, C/C++]
 ---
-I worked as a research assistant to professor [Leung Ho Fung](http://www.cse.cuhk.edu.hk/~lhf/) since summer 2019. 
+I worked as a research assistant to professor [Leung Ho-Fung](http://www.cse.cuhk.edu.hk/~lhf/) since summer 2019. 
 
 I conducted a research independently with professor Leung's responsible supervision and careful guidance, where I learned a lot about how to research for a interested topic, how to start a research, and how to write a paper. 
 

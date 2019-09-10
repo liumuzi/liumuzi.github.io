@@ -1,0 +1,18 @@
+---
+title: Exercise Is Medicine (EIM)<small> - fitness tracking Web App for chronic patients</small>
+categories: [project, extra-curricular, JavaScript, docker]
+---
+[EIM](http://www.eim.hk/) is a programme lead by the Department of Sports Science & Physical Education in CUHK, with coorperation of the Department of Computer Science and Engineering. It advocates adding exercise into chronic patients' ordinary treatment. 
+
+The computer science and engineering department is mainly responsible to the development of a web app and a mobile app, which are used to upload and present the exercise data catched by patients' smart bracelets. 
+
+I worked as a back-end developer of the web app with the team led by professor [James Cheng](https://www.cse.cuhk.edu.hk/~jcheng/index.html) in this summer. During the development, I learnt a lot of tools adn technologies of web development, and I also got a lot of chances to practice them.
+
+
+### Works
+* Self-learnt tools used in the project, such as docker, TypeORM, and Azure storage service 
+
+* Developed a part of the back-end APIs using TypeORM and MSSQL database 
+
+* Designed the incentive and achievement system to encourage chronic patients to exercise regularly
+<br><br>
