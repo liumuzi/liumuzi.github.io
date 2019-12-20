@@ -1,9 +1,11 @@
 ---
-title: <small>FunToMove - </small> a mobile App that enhances primary students’ physical activity level 
+title: FunToMove - <small>a mobile App that enhances primary students’ physical activity level</small>
 date: 2019-10-21
-categories: [blog, interest, deep learning, Python]
+categories: [blog, project, interest, deep learning, Python]
 ---
-In the summer of 2018, I participated a project called [FunToMove](https://funtomove-jc.hk/en/), which is funded by Hong Kong Jokey Club. The project aims to enhance primary students' physical activity level by recording and supervising their activity levels through sports bracelets. Their physical teachers and gardians may check and manage the necessary amount of physical sports through our mobile App. 
+In the summer of 2018, I participated a project called [FunToMove](https://funtomove-jc.hk/en/), which is funded by Hong Kong Jokey Club. 
+
+The project aims to enhance primary students' physical activity level by recording and supervising their activity levels through sports bracelets. Their physical teachers and gardians may check and manage the necessary amount of physical sports through our mobile App. 
 
 ### My Work
 I designed and tuned a Recurrent Neural Network (RNN) with Long Short-Term Memory (LSTM) architecture to predict the wearing position of the sports bracelet. There are three possible positions: waist, chest, and wist. The inputs are sequences of data collected by sports bracelets, and the network was expected to predict the correct position, so that we can improve the accuracy of the estimation of activity levels.

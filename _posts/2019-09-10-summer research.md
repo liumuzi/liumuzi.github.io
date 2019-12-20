@@ -19,7 +19,7 @@ As one of professor Leung's focus is on the multi-agent system, I briefly search
 
 * Worked with a team of 5 to implement and analyze the combined mechanism
 
-* Completed a research report and a poster presentation of the works in summer 2017 at the Chinese University of Hong Kong
+* Completed [a research report and a poster presentation](https://github.com/liumuzi/2017summer) of the works in summer 2017 at the Chinese University of Hong Kong.
 <br><br>
 
 
