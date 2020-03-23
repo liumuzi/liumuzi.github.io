@@ -1,6 +1,6 @@
 ---
 title: Reinforcement Learning for Convention Emergence in Lexicon Coordination Game
-categories: [research, interest, multi-agent system, reinforcement learning, C/C++]
+categories: [research, interest, multi-agent system, reinforcement learning, C/C++, publication]
 ---
 I worked as a research assistant to professor [Leung Ho-Fung](http://www.cse.cuhk.edu.hk/~lhf/) since summer 2019. 
 
@@ -19,9 +19,13 @@ The particular research problem we study is the _language coordination problem_,
 * Analyzed the simulation results and found relations between local conventions in the network and the
 hindering of the emergence of a global convention.
 
-* Independently wrote a paper for the whole work, which is on submission.
+* Independently wrote a paper for the whole work, which is accepted by ICAISC2020.
 <br><br>
 
 
 ### Paper Abstract
 In this paper, we propose a refinement of multiple-R mechanism proposed byWang et al. [1], which is a reinforcement learning based mechanism to create a social convention from a significantly large convention space for multi-agent systems. Specifically, multiple-R mechanism focuses on the language coordination problem, where agents develop a lexicon convention from scratch. As a lexicon is a set of mappings of concepts and words, the convention space is exponential to the number of concepts and words. We find that multiple-R suffers from local conventions, and refine it to the independent-R mechanism, which excludes neighbors’ rewards from the value update function, and thus avoids the emergence of local conventions. We also explore how local conventions influence the dynamics of convention emergence. Extensive simulations verify that independent-R outperforms the state-of-the-art approaches, in the sense that a more widely adopted convention emerges in a shorter time.
+
+
+### Self-Archiving Manuscript
+<object data="/assets/papers/Faster Convention Emergence by Avoiding Local Conventions in Reinforcement Social Learning.pdf" width="800" height="1000" type='application/pdf'/></object>

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Publication
+permalink: /publication/
+---
+Published or accepted research works.
+
+
+{% for post in site.posts %}
+	{% if post.categories contains 'publication' %}
+		<div>
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			{% for tag in site.categories %}
+				{% if tag.name != 'publication' and post.categories contains tag.name %}
+					<a class="tag" href= "{{ tag.url }}" >{{tag.name}}</a> 
+				{% endif %}
+			{% endfor %}
+			<p>{{ post.excerpt }}</p>
+		</div>
+	{% endif %}
+{% endfor %}
