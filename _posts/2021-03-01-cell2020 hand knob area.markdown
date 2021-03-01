@@ -6,15 +6,15 @@ categories: [research, interest, paper-notes, neuroscience]
 My take-away notes of paper *Hand Knob Area of Premotor Cortex Represents the Whole Body in a Compositional Way*. 
 
 
-### INTRO
+## INTRO
 
 
-## Traditional view 
+### Traditional view 
 
 - <u>Macroscopic somatotopy</u> (different body parts, different cortical area) 
 - FMRI, ECoG recordings in human precentral gyrus support the <u>motor homunculus</u>
 
-## Revisitation of motor somatotopy 
+### Revisitation of motor somatotopy 
 
 - Hand knob area recordings, strong neural tuning to all tested movements <u>(intermixed whole-body tuning)</u>
 - How each body part is neurally coded in relation to the others 
@@ -23,13 +23,13 @@ My take-away notes of paper *Hand Knob Area of Premotor Cortex Represents the Wh
 	- Discrete intracortical brain-computer interface (BCI) that decodes movements across <u>all four limbs from a single brain area</u>.
 
 
-### EXPERIMENTS
+## EXPERIMENTS
 
-## Participants
+### Participants
 - **T5**: C4 spinal cord injury, paralyzed from neck down; instructed delay task 
 - **T7**: amyotrophic lateral sclerosis (ALS), limited movements; paired movement task with a block design 
 
-## Results
+### Results
 - <u>Strong neural tuning to all tested movements</u>, including those of the face, head and leg.  
 	- Single node firing rate figure of T5 shows <u>the recorded neuron fires for all the tasks</u>. 
 	- Population-level neural modulation also observed, tuning to arm movements is the strongest 
@@ -63,10 +63,10 @@ My take-away notes of paper *Hand Knob Area of Premotor Cortex Represents the Wh
 	- Multiple effectors -> accuracy increased 
 
 
-### DISCUSSION 
+## DISCUSSION 
 
 - There was strong neural tuning to face, head, arm, and leg movements intermixed in the hand knob area of precentral gyrus. 
-- Questions:  
+- <u>Questions</u>:  
 	- Whether the intermixed tuning we showed here also holds in the primary cortex (in the central sulcus)? BA4 in humans likely contains more somatotopically segregated (and less compositional) movement representations. 
 	- How whole-body tuning might generalize to people without tetraplegia? Cortical remapping? Instead, we found, in participant T5, that the arms and legs were more strongly represented than the face and head, suggesting that remapping may be limited in the precentral gyrus. 
 	- Some of the whole-body tuning we observed was caused by small, inadvertent movements of the contralateral arm? Unlikely, rich, high-dimensional structure in the data & BCI decoding performance increased when decoding additional effectors 
@@ -76,11 +76,10 @@ My take-away notes of paper *Hand Knob Area of Premotor Cortex Represents the Wh
 - Rank ordering of effectors that determines which effector’s representation remains intact during simultaneous movement. 
 - Future work: 
 	- The representation of head and face movements 
-
 	- The observed activity may be an epiphenomenon of ‘‘overflow’’ activity from connected networks that control other body parts. -> whether the compositional code is causally involved with movement construction as opposed to epiphenomenal. 
 - May explain "motor overflow": An incomplete transformation between a compositional code andmuscle activity could cause the effector-independent movement command to leak to unintended effectors 
 
-### MY COMMENTS & QUESTIONS
+## MY COMMENTS & QUESTIONS
 
 - The paper proposed a break-through discovery, and an inspiring new framework of how the neurons are coded for movements. I like the study very much and the conclusion is intrinsically convincing to me. The compositionality reminds me of the engineering technique *feature embeddings*. The process are more like a reversed version of feature embedding. One is to convert meanings to vectors, and another one is to decode the exact meanings from vectors. 
 
