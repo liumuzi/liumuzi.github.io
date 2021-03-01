@@ -80,7 +80,7 @@ My take-away notes of paper *Hand Knob Area of Premotor Cortex Represents the Wh
 	- The observed activity may be an epiphenomenon of ‘‘overflow’’ activity from connected networks that control other body parts. -> whether the compositional code is causally involved with movement construction as opposed to epiphenomenal. 
 - May explain "motor overflow": An incomplete transformation between a compositional code andmuscle activity could cause the effector-independent movement command to leak to unintended effectors 
 
-### MY COMMENTS & Questions
+### MY COMMENTS & QUESTIONS
 
 - The paper proposed a break-through discovery, and an inspiring new framework of how the neurons are coded for movements. I like the study very much and the conclusion is intrinsically convincing to me. The compositionality reminds me of the engineering technique *feature embeddings*. The process are more like a reversed version of feature embedding. One is to convert meanings to vectors, and another one is to decode the exact meanings from vectors. 
 
