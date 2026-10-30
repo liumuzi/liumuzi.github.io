@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { personalInfo } from '@/data/content';
 import { SECTIONS } from '@/lib/constants';
@@ -49,11 +48,8 @@ export function Hero() {
       className="min-h-screen flex items-center p-4 sm:p-10 bg-gray-100 relative overflow-hidden"
     >
       {/* Background diagonal line */}
-      <motion.div
+      <div
         className="absolute top-1/2 left-1/2 w-[200vw] h-[1px] bg-gray-300 pointer-events-none"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
         style={{
           transform: 'translate(-50%, -50%) rotate(35deg)',
           zIndex: 0,
@@ -64,10 +60,7 @@ export function Hero() {
       <div className="relative z-10 w-full max-w-7xl mx-auto">
         <div className="flex flex-col gap-8 md:flex-row md:items-end lg:gap-10">
           {/* Main identity card */}
-          <motion.div
-            initial={{ opacity: 0, y: 32, rotate: -1 }}
-            animate={{ opacity: 1, y: 0, rotate: 0 }}
-            transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          <div
             className="relative flex w-full max-w-[460px] flex-col border-2 border-gray-800 bg-white brutalist-shadow-sm"
           >
           {/* Corner crosshairs */}
@@ -119,14 +112,11 @@ export function Hero() {
             ))}
           </div>
 
-          </motion.div>
+          </div>
 
           {/* Awards are proof points, not navigation. */}
-          <motion.aside
+          <aside
             aria-labelledby="hero-awards-title"
-            initial={{ opacity: 0, y: 32, rotate: 1 }}
-            animate={{ opacity: 1, y: 0, rotate: 0 }}
-            transition={{ duration: 0.7, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
             className="relative w-full max-w-[460px] border-2 border-gray-800 bg-white font-mono brutalist-shadow-sm md:max-w-[340px]"
           >
             <div className="absolute top-2 left-2 w-2.5 h-2.5 pointer-events-none">
@@ -176,7 +166,7 @@ export function Hero() {
                 </li>
               ))}
             </ol>
-          </motion.aside>
+          </aside>
         </div>
       </div>
 
