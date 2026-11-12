@@ -82,8 +82,8 @@ export const games: GameProject[] = [
     },
     achievements: [
       {
-        zh: '小红书累计游玩 35 万人次',
-        en: '350,000 cumulative plays on Xiaohongshu',
+        zh: '小红书累计游玩 40 万人次',
+        en: '400,000 cumulative plays on Xiaohongshu',
       },
       {
         zh: 'TapTap iOS 单日热门榜第 2 名',
