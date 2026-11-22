@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion, useReducedMotion } from 'framer-motion';
+import { CompetitionResultRow } from '@/components/ui/CompetitionResultRow';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { GameProject } from '@/types/content';
 
@@ -15,6 +16,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project, delay = 0, featured = false }: ProjectCardProps) {
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
+  const { competitionResults = [], achievements = [] } = project;
 
   return (
     <motion.div
@@ -84,15 +86,20 @@ export function ProjectCard({ project, delay = 0, featured = false }: ProjectCar
           </p>
 
           {/* Achievements */}
-          {project.achievements && project.achievements.length > 0 && (
-            <div className="space-y-2 border-t border-gray-200 pt-4">
-              {project.achievements.map((achievement, idx) => (
-                <div key={idx} className={`flex items-start gap-2 ${featured ? 'text-base' : 'text-sm'}`}>
+          {(competitionResults.length > 0 || achievements.length > 0) && (
+            <ul className="space-y-3 border-t border-gray-200 pt-4">
+              {competitionResults.map((competition) => (
+                <li key={competition.event.en + competition.year + competition.result.en}>
+                  <CompetitionResultRow competition={competition} />
+                </li>
+              ))}
+              {achievements.map((achievement) => (
+                <li key={achievement.en} className={`flex items-start gap-2 ${featured ? 'text-base' : 'text-sm'}`}>
                   <span aria-hidden="true" className="mt-0.5 font-bold text-gray-800">▸</span>
                   <span className="font-semibold leading-snug text-gray-900">{t(achievement)}</span>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           )}
 
           {/* Tags */}

@@ -2,7 +2,9 @@
 
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { CompetitionResultRow } from '@/components/ui/CompetitionResultRow';
 import { personalInfo } from '@/data/content';
+import { featuredCompetitionResults } from '@/data/games';
 import { SECTIONS } from '@/lib/constants';
 
 export function Hero() {
@@ -136,33 +138,12 @@ export function Hero() {
             </div>
 
             <ol className="divide-y divide-gray-200">
-              {[
-                {
-                  year: '2026',
-                  event: { zh: '光子游戏大赛', en: 'Photon Game Competition' },
-                  award: { zh: '概念赛道银奖', en: 'Concept Track · Silver Award' },
-                  project: { zh: '《虫虫家装》', en: 'Bug Décor' },
-                },
-                {
-                  year: '2026',
-                  event: { zh: '上海 AIGC 国际大赛', en: 'Shanghai International AIGC Competition' },
-                  award: { zh: 'AI 游戏赛道优秀作品奖', en: 'AI Game Track · Outstanding Work' },
-                  project: { zh: '《虫虫家装》', en: 'Bug Décor' },
-                },
-                {
-                  year: '2025',
-                  event: { zh: '腾讯游戏创作大赛', en: 'Tencent Game Creation Competition' },
-                  award: { zh: 'AI 玩法创作奖', en: 'AI Gameplay Innovation Award' },
-                  project: { zh: '《我的恋综超失控》', en: 'Love Mission 404' },
-                },
-              ].map((item) => (
-                <li key={item.year + item.event.en} className="px-5 py-4">
-                  <div className="mb-1 flex items-baseline justify-between gap-3 text-[11px] font-semibold text-gray-500">
-                    <span>{t(item.event)}</span>
-                    <span>{item.year}</span>
-                  </div>
-                  <p className="text-sm font-bold leading-snug text-gray-900">{t(item.award)}</p>
-                  <p className="mt-1 text-[11px] text-gray-500">{t(item.project)}</p>
+              {featuredCompetitionResults.map(({ competition, project }) => (
+                <li key={competition.result.en + project.en} className="px-5 py-4">
+                  <CompetitionResultRow competition={competition} />
+                  <p className="mt-1.5 font-sans text-xs text-gray-500">
+                    {language === 'zh' ? `《${t(project)}》` : t(project)}
+                  </p>
                 </li>
               ))}
             </ol>

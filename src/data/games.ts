@@ -19,15 +19,19 @@ export const games: GameProject[] = [
       zh: 'AI驱动的恋综修罗场：化身导演操控嘉宾，在不可控的即兴互动中制造“抓马”剧情，收割全网流量。负责核心程序实现，并参与所有游戏设计决策。',
       en: 'AI-driven dating-show mayhem: direct contestants and orchestrate improvised drama to fuel viral moments. Responsible for core programming and all game design decisions.',
     },
+    competitionResults: [
+      {
+        event: { zh: '腾讯游戏创作大赛', en: 'Tencent Game Creation Competition' },
+        result: { zh: 'AI 玩法创作奖', en: 'AI Gameplay Innovation Award' },
+        year: 2025,
+        featuredOnHome: true,
+      },
+      {
+        event: { zh: '光子游戏大赛', en: 'Photon Game Competition' },
+        result: { zh: '高校赛道 · 铜奖', en: 'University Track · Bronze Award' },
+      },
+    ],
     achievements: [
-      {
-        zh: '荣获腾讯游戏创作大赛2025 AI玩法创作奖',
-        en: 'Winner of Tencent Game Creation Competition 2025 AI Gameplay Innovation Award',
-      },
-      {
-        zh: '光子游戏大赛高校赛道铜奖',
-        en: 'Bronze Award, University Track, Photon Game Competition',
-      },
       {
         zh: '小红书爆款报道均赞1.6k+；游研社、LitGate等报道',
         en: 'Viral Xiaohongshu coverage avg 1.6k+ likes; featured by Gaming Society, LitGate, etc.',
@@ -121,18 +125,23 @@ export const games: GameProject[] = [
       zh: '温情的装修冒险：在危险的丛林中搜集资源，为水獭家族等小动物装修梦想之家，建立跨种族的羁绊。负责核心程序，实现装修+搜打撤核心玩法并制作原型，组建团队并主导敏捷开发。',
       en: 'Heartwarming renovation adventure: gather resources in a dangerous forest to renovate dream homes for otter families and other animals, building cross-species bonds. Responsible for core programming and the decorate-plus-scavenge-and-retreat loop, built the prototype, formed a team, and led agile delivery.',
     },
-    achievements: [
+    competitionResults: [
       {
-        zh: '入围 2026 腾讯游戏创作大赛 AI 游戏赛道决赛',
-        en: 'Finalist, AI Game Track, 2026 Tencent Game Creation Competition',
+        event: { zh: '腾讯游戏创作大赛', en: 'Tencent Game Creation Competition' },
+        result: { zh: 'AI 游戏赛道 · 决赛入围', en: 'AI Game Track · Finalist' },
+        year: 2026,
       },
       {
-        zh: '荣获光子游戏大赛2026概念赛道银奖',
-        en: 'Silver Award, Concept Track, Photon Game Competition 2026',
+        event: { zh: '光子游戏大赛', en: 'Photon Game Competition' },
+        result: { zh: '概念赛道 · 银奖', en: 'Concept Track · Silver Award' },
+        year: 2026,
+        featuredOnHome: true,
       },
       {
-        zh: '上海 AIGC 国际大赛 AI 游戏赛道优秀作品奖',
-        en: 'Outstanding Work Award, AI Game Track, Shanghai International AIGC Competition',
+        event: { zh: '上海 AIGC 国际大赛', en: 'Shanghai International AIGC Competition' },
+        result: { zh: 'AI 游戏赛道 · 优秀作品奖', en: 'AI Game Track · Outstanding Work Award' },
+        year: 2026,
+        featuredOnHome: true,
       },
     ],
     tags: ['Unity', 'C#', 'Team Lead'],
@@ -161,10 +170,11 @@ export const games: GameProject[] = [
       zh: '童话风叙事解谜：重组剧情卡片，在无限循环的英雄剧本中寻找逃离幻想的真相。负责程序并独立设计核心叙事诡计。',
       en: 'Fairy-tale narrative puzzle: reassemble story cards to break out of an endlessly looping hero script and uncover the truth. Implemented programming and designed the central narrative twist.',
     },
-    achievements: [
+    competitionResults: [
       {
-        zh: 'GMTK2025 叙事性排名#141/9562（前1%）',
-        en: 'GMTK2025 Narrative rank #141/9562 (top 1%)',
+        event: { zh: 'GMTK Game Jam', en: 'GMTK Game Jam' },
+        result: { zh: '叙事性排名 #141/9562（前 1%）', en: 'Narrative rank #141/9562 (top 1%)' },
+        year: 2025,
       },
     ],
     tags: ['Unity', 'C#', 'Game Jam', 'Narrative'],
@@ -246,3 +256,11 @@ export const games: GameProject[] = [
     ],
   },
 ];
+
+export const featuredCompetitionResults = games
+  .flatMap(({ title, competitionResults = [] }) =>
+    competitionResults
+      .filter((competition) => competition.featuredOnHome)
+      .map((competition) => ({ competition, project: title })),
+  )
+  .sort((a, b) => (b.competition.year ?? 0) - (a.competition.year ?? 0));

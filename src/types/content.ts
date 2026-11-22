@@ -3,12 +3,20 @@ export interface BilingualText {
   en: string;
 }
 
+export interface CompetitionResult {
+  event: BilingualText;
+  result: BilingualText;
+  year?: number;
+  featuredOnHome?: boolean;
+}
+
 export interface GameProject {
   id: string;
   title: BilingualText;
   subtitle: BilingualText;
   period: BilingualText;
   description: BilingualText;
+  competitionResults?: CompetitionResult[];
   achievements?: BilingualText[];
   tags: string[];
   links?: {
