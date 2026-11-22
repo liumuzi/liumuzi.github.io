@@ -123,6 +123,10 @@ export const games: GameProject[] = [
     },
     achievements: [
       {
+        zh: '入围 2026 腾讯游戏创作大赛 AI 游戏赛道决赛',
+        en: 'Finalist, AI Game Track, 2026 Tencent Game Creation Competition',
+      },
+      {
         zh: '荣获光子游戏大赛2026概念赛道银奖',
         en: 'Silver Award, Concept Track, Photon Game Competition 2026',
       },
